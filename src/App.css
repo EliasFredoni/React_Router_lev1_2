@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  height: 48px;
+  width: 100%;
+  background-color: #faeee7;
   color: white;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.logoBereich {
+  margin: 0 0 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.navText {
+  color: #ffbbcc;
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.dunkelButton {
+  font-family: Lobster;
+  font-size: 15px;
+  background: #5eb7b7;
+  border: 2px solid #ffbbcc;
+  display: block;
+  height: 50px;
+  margin: 10px;
+  padding: 2px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  line-height: 45px;
+  color: #fffdf9;
+  cursor: pointer;
+}
+
+.hellButton {
+  font-family: Lobster;
+  font-size: 15px;
+  background: #9be3de;
+  border: 2px solid #ffbbcc;
+  display: block;
+  height: 50px;
+  margin: 10px;
+  padding: 2px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  line-height: 45px;
+  color: #fffdf9;
+  cursor: pointer;
+}
+
+.rechtButtons {
+  justify-content: flex-start;
+  padding-right: 20px;
+  width: 550px;
+  display: flex;
 }

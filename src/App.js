@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import SchabloneMore from './components/SchabloneMore';
+import { Routes, Route } from "react-router-dom";
+import Galerie from "./pages/Galerie";
+import Kontakt from "./pages/Kontakt";
+import Oeffnungszeiten from "./pages/Oeffnungszeiten";
+import Speisekarte from "./pages/Speisekarte";
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <SchabloneMore />
+      <Routes>
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/galerie" element={<Galerie />} />
+        <Route path="/oeffnungszeiten" element={<Oeffnungszeiten />} />
+        <Route path="/speisekarte" element={<Speisekarte />} />
+      </Routes>
+    </div >
   );
 }
 
